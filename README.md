@@ -8,7 +8,7 @@ Dada la siguiente clase:
 
 ```python
 class Camion:
-    def __init__(self, marca, modelo):
+    def __init__(self, marca, modelo,carga,anio):
         self.patente = patente
         self.marca = marca
         self.carga = carga
@@ -26,12 +26,13 @@ furgon2 = furgon1
 furgon3 = Camion("DEF456", "Volvo", 2000, 2021)
 furgon4 = Camion("ABC123", "Mercedes", 1000, 2020)
 
-print(furgon1 == furgon2)
-print(furgon1 is furgon2)
-print(furgon3 == furgon4)
-print(furgon3 is furgon4)
-print(furgon1 == furgon4) 
-```
+print(furgon1 == furgon2) True
+print(furgon1 is furgon2) True
+print(furgon3 == furgon4) False 
+print(furgon3 is furgon4) False 
+print(furgon1 == furgon4) True
+
+
 
 b. Modificá el código dado para que la comparación de dos objetos de la clase Camion devuelva True cuando todos sus atributos sean iguales.
 
@@ -51,6 +52,8 @@ f. Creá un pequeño menú que te permita:
 En este ejercicio vamos a modelar una computadora, creando la clase `Computadora` para ello.
 
 Primero, pensá un rato en todas las características que mirarías al momento de comprar una. ¿Cómo llamamos a esas características en el paradigma de la programación orientada a objetos?
+
+atributos
 
 Luego de pensarlo, continuá con la consigna.
 
